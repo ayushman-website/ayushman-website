@@ -3,44 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayushman | Iron Man Inspired Portfolio</title>
+  <title>Ayushman | Iron Man Anime Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #00ffff;
     }
 
     header {
-      background: url('jarvis-header.jpg') no-repeat center center/cover;
-      height: 400px;
+      background: url('ironman-anime.jpg') no-repeat center center/cover;
+      height: 420px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: 3px solid #00ffff;
+      border-bottom: 4px solid #00ffff;
+      box-shadow: 0 0 25px #00ffff;
     }
 
     .glow {
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: bold;
-      color: #ffffff;
+      color: white;
       padding: 20px 40px;
-      border: 3px solid #00ffff;
-      border-radius: 20px;
+      border: 2px solid #00ffff;
       background: rgba(0, 0, 50, 0.6);
-      text-shadow: 
-        0 0 10px #00ffff,
-        0 0 20px #00ffff,
-        0 0 30px #1a8cff,
-        0 0 40px #1a8cff;
-      box-shadow: 0 0 20px #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #1a8cff;
+      border-radius: 20px;
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px #00ffff; }
+      50% { box-shadow: 0 0 40px #1a8cff; }
     }
 
     main {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
     }
 
     section {
@@ -50,11 +55,16 @@
     h2 {
       color: #00ffff;
       border-bottom: 1px solid #00ffff;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     ul {
       padding-left: 20px;
+    }
+
+    p {
+      line-height: 1.6;
     }
 
     a.button {
@@ -70,13 +80,28 @@
 
     a.button:hover {
       background: #0099cc;
+      box-shadow: 0 0 10px #00ffff;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #999;
+      color: #ccc;
+      border-top: 1px solid #00ffff;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .glow {
+        font-size: 1.8rem;
+        padding: 12px 20px;
+        text-align: center;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
     }
   </style>
 </head>
@@ -86,42 +111,4 @@
   </header>
 
   <main>
-    <section>
-      <h2>🧠 About Me</h2>
-      <p>Hello! I am Ayushman Chouhan, a focused and energetic freelancer working in office support roles. I specialize in tools like MS Excel and Hindi typing for documentation and business operations.</p>
-    </section>
-
-    <section>
-      <h2>💼 Work From Home Job Seeking</h2>
-      <p>I am actively seeking remote work opportunities in roles such as customer support, data entry, virtual assistant, and documentation support. With a strong typing speed (60 WPM), good communication skills, and a reliable internet connection, I am ready to contribute to any team or project from home.</p>
-      <p>I am currently available for freelance and part-time positions. If you're hiring or know of any opportunity, feel free to reach out. Let's connect!</p>
-    </section>
-
-    <section>
-      <h2>⚙️ Skills</h2>
-      <ul>
-        <li>MS Excel (Intermediate)</li>
-        <li>Hindi Typing – 60 WPM</li>
-        <li>Data Entry & Customer Support</li>
-        <li>English Communication</li>
-        <li>Office Management</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📄 Resume</h2>
-      <a href="Resume-ayushman.docx.docx" class="button" download>Download My Resume</a>
-    </section>
-
-    <section>
-      <h2>📬 Contact</h2>
-      <p>Email: ayushman@email.com</p>
-      <p>Location: India</p>
-    </section>
-  </main>
-
-  <footer>
-    Iron Man Inspired • © 2025 Ayushman Chouhan
-  </footer>
-</body>
-</html>
+    <section
