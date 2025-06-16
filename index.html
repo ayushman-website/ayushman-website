@@ -25,22 +25,19 @@
       box-shadow: 0 0 25px #ffd700;
     }
 
-    header::before {
-      content: "";
+    header img.arc-reactor {
       position: absolute;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, #ffd700 0%, transparent 60%);
-      opacity: 0.2;
+      width: 220px;
+      height: 220px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      animation: rotate 10s linear infinite;
-      border-radius: 50%;
+      animation: spin 12s linear infinite;
+      opacity: 0.18;
       z-index: 0;
     }
 
-    @keyframes rotate {
+    @keyframes spin {
       0% { transform: translate(-50%, -50%) rotate(0deg); }
       100% { transform: translate(-50%, -50%) rotate(360deg); }
     }
@@ -128,6 +125,7 @@
 </head>
 <body>
   <header>
+    <img src="mark 50.jpg" alt="Arc Reactor" class="arc-reactor" />
     <div class="glow">Ayushman Chouhan | Portfolio Mode Activated</div>
   </header>
 
