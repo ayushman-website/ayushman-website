@@ -1,139 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayushman Chouhan | Portfolio</title>
+  <title>Ayushman | Iron Man Inspired Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #00ffff;
     }
 
     header {
       background: url('ironman-header.jpg') no-repeat center center/cover;
-      height: 300px;
+      height: 400px;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
       color: #00ffff;
-      font-size: 2.8rem;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 3rem;
       font-weight: bold;
-      text-shadow: 2px 2px 10px black;
+      border-bottom: 2px solid #00ffff;
     }
 
-    nav {
-      background: #1a1a1a;
-      padding: 15px;
-      text-align: center;
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    nav a {
-      color: #ccc;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00ffff;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #1e1e1e;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
+    section {
+      margin-bottom: 40px;
     }
 
     h2 {
       color: #00ffff;
-      margin-bottom: 15px;
+      border-bottom: 1px solid #00ffff;
+      padding-bottom: 5px;
     }
 
-    p {
-      margin-bottom: 15px;
+    ul {
+      padding-left: 20px;
     }
 
-    .resume-btn {
+    a.button {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #00ffff;
+      background: #00ffff;
       color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
-      margin-top: 10px;
-      transition: background 0.3s ease;
+      transition: 0.3s ease;
     }
 
-    .resume-btn:hover {
-      background-color: #00cccc;
+    a.button:hover {
+      background: #0099cc;
     }
 
     footer {
-      background-color: #1a1a1a;
-      color: #aaa;
       text-align: center;
       padding: 20px;
-      margin-top: 30px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* JARVIS-style glow */
+    .glow {
+      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
     }
   </style>
 </head>
 <body>
-
   <header>
-    Ayushman Chouhan
+    <div class="glow">Ayushman Portfolio | Jarvis Mode Activated</div>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section>
+      <h2>🧠 About Me</h2>
+      <p>Hello! I am Ayushman Chouhan, a focused and energetic freelancer learning accounting, MS Excel, and more. I specialize in office support roles and love Jarvis-like tech themes.</p>
+    </section>
 
-  <div class="container" id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello, I'm Ayushman Chouhan – a dedicated and hardworking individual with a strong passion for administrative support, data entry, and MS Excel-based work. 
-      I have hands-on experience working in office environments, telecalling, and customer handling roles. 
-      Currently, I am enhancing my skills in Excel and accounting while actively looking for remote job opportunities.
-    </p>
-    <p>
-      I believe in consistent self-growth and am always open to learning new technologies and tools that improve productivity. 
-      With a typing speed of 60 WPM, good communication skills, and full-time availability, I aim to be a reliable asset for any team.
-    </p>
-  </div>
+    <section>
+      <h2>⚙️ Skills</h2>
+      <ul>
+        <li>MS Excel (Intermediate, Hindi Guide)</li>
+        <li>Hindi Typing – 60 WPM</li>
+        <li>Tally Prime Accounting Software</li>
+        <li>Customer Support & Data Entry</li>
+        <li>Basic English Communication</li>
+      </ul>
+    </section>
 
-  <div class="container" id="resume">
-    <h2>Download My Resume</h2>
-    <p>Click below to download my latest resume:</p>
-    <a href="Resume-ayushman.docx.docx" download class="resume-btn">Download Resume</a>
-  </div>
+    <section>
+      <h2>📄 Resume</h2>
+      <a href="Resume-ayushman.docx.docx" class="button" download>Download My Resume</a>
+    </section>
 
-  <div class="container" id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> ayushman@example.com</p>
-    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-    <p><strong>Location:</strong> India (Open to Remote Opportunities)</p>
-  </div>
+    <section>
+      <h2>📬 Contact</h2>
+      <p>Email: ayushman@email.com</p>
+      <p>Location: India</p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Ayushman Chouhan. All Rights Reserved.
+    Powered by Jarvis • Iron Man Inspired • © 2025 Ayushman Chouhan
   </footer>
-
 </body>
 </html>
